@@ -18,9 +18,6 @@ include vendor/pure/configs/pure_phone.mk
 # Inherit AOSP device configuration for bullhead
 $(call inherit-product, device/lge/hammerhead/aosp_hammerhead.mk)
 
-# Inherit arm phone gapps
-$(call inherit-product-if-exists, vendor/gapps/arm-phone-gapps.mk)
-
 # Override AOSP build properties
 PRODUCT_NAME := hammerhead
 PRODUCT_BRAND := google
